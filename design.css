@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+body{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 1000%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: rgb(247, 245, 246);
+    margin: 50px;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left{
+    position:relative ;
+    background-color:beige;
+    padding: 60px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom:1.5px solid rosybrown;
+}
+.profileText .image{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: rgb(13, 12, 13);
+    margin-top: 10px;
+    text-align: left;
+}
+.profileText q{
+    margin-top: 3px;
+    text-align: center;
+}
+.contact{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+h3{
+    text-transform: uppercase;
+    color: rgb(235, 144, 113);
+}
+.contact ul{
+    position: relative;
+    font-size: 85%;
+}
+.contact ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact ul li .icon{
+    display: inline-block;
+    font-size: 90%;
+    color: cornflowerblue;
+}
+
+.lang{
+    padding-top: 30px;
+}
+.lang ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 5px;
+}
+.lang ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: darkslategrey;
+    display:block;
+    margin-top: 5px;
+}
+.lang ul li .percent div{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background:rgb(78, 143, 217) ;
+}
+
+.container .right{
+    position:relative ;
+    background:rgb(228, 206, 133);
+    padding: 60px;
+    float: right;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.about h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about p{
+    text-align: justify;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: initial;
+}
+.edu{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.edu h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.edu ul{
+    position: relative;
+    font-size: 85%;
+}
+.edu ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.skills{
+    padding-top: 30px;
+    text-align: left;
+    color: black;
+}
+.skills ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 5px;
+}
+.skills ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(14, 14, 14);
+    display:block;
+    margin-top: 5px;
+}
+.skills ul li .percent div{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background:rgb(216, 151, 182) ;
+}
